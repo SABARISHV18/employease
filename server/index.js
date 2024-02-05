@@ -10,14 +10,13 @@ const Categorymodel=require('./models/Categorymodel')
 
 const app = express();
 app.use(express.json());
-app.use(cors(
- {
-  origin: ["https://deploy-mern-1whq.vercel.app"],
-  methods: ["POST", "GET", "PUT"],
-  credentials: true
- }
-));
+app.use(cors());
 
+// {
+//   origin: ["https://deploy-mern-1whq.vercel.app"],
+//   methods: ["POST", "GET", "PUT"],
+//   credentials: true
+//  }
 
  mongoose.connect("mongodb+srv://sabarishv:Sabarii8@cluster0.ft5iy6n.mongodb.net/?retryWrites=true&w=majority");
 //  mongodb://127.0.0.1:27017/ems
